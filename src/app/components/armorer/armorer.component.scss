@@ -1,0 +1,141 @@
+$background-color: #0E222F;
+
+.title{
+    font-size: 42px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.container{
+    padding: 1em;
+    background: #201410;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content {
+    font-family: 'Cinzel', serif;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 56px auto 56px;
+    grid-template-rows: auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left-items model rigth-items"
+        ". bottom-items ."
+        ". . .";
+    h2{
+        color: #FFD100;
+        line-height: 3px;
+        font-size: 2em;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+    }
+}
+
+.left-items {
+    grid-area: left-items;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}
+
+.rigth-items {
+    grid-area: rigth-items;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}
+
+.bottom-items {
+    grid-area: bottom-items;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px 10px
+}
+
+.model {
+    grid-area: model;
+    background-position: center;
+    background-image: url('../../../assets/images/models/warlock_troll-410.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+    h2{
+        background-color: #b62d2e;
+        position: relative;
+        top: -1.4em;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+.item {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.item-icon{
+    width: 100%;
+    margin-bottom: .5em;
+    display: flex;
+    line-height: normal;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    color: #FFD100;
+    font-weight: 700;
+    font-size: 14px;
+    img{
+        height: 1em;
+        width: 1em;
+    }
+}
+
+img{
+    height: 100%;
+}
+
+.border-purple{
+    border-radius: 5px;
+    border: 2px solid #a335ee;
+}
+
+.details{
+    span{
+        color: #fff;
+    }
+    h1, h2, h3{
+        color: #FFD100;
+        line-height: 3px;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+        text-align: center;
+    }
+}
+
+hr{
+    margin: .5em auto;
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #b62d2e, rgba(255, 255, 255, 0));
+}
+
+.bg-light-grey{
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+.bg-red{
+    background-color: #b62d2e;
+    border-radius: 5px;
+}
+
+a{
+    color: #FFD100;
+    &:hover{
+        color: #b62d2e;
+    }
+}
