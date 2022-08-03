@@ -16,6 +16,8 @@
     color: #fff;
     font-weight: bold;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+    user-select: none;
+    transition: all 0.3s ease-in-out;
     img{
         width: 2em;
         height: 2em;
@@ -24,6 +26,10 @@
     h2{
         line-height: 5px;
         font-family: 'Cinzel', serif;
+    }
+    &:hover{
+        cursor: pointer;
+        transform: scale(0.95);
     }
 }
 
