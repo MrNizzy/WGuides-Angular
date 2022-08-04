@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { ArmorerComponent } from './components/armorer/armorer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IntroductionGuideComponent } from './components/introduction-guide/introduction-guide.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { StatisticsPriorityComponent } from './components/statistics-priority/statistics-priority.component';
+import { GemsComponent } from './components/gems/gems.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArmorerComponent,
     NavbarComponent,
-    IntroductionGuideComponent
+    IntroductionGuideComponent,
+    FooterComponent,
+    StatisticsPriorityComponent,
+    GemsComponent
   ],
   imports: [
     BrowserModule,

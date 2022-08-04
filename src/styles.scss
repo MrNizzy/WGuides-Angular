@@ -4,3 +4,31 @@
 body{
     background-color: #28150f;
 }
+.link{
+    cursor: pointer;
+    color: #FFD100;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: #b62d2e;
+    }
+}
+.button{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #28150f;
+    font-family: 'Cinzel', serif;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 900;
+    color: #FFD100;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: #401410;
+        transform: scale(0.95);
+    }
+}

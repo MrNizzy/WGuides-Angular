@@ -1,8 +1,13 @@
 <app-navbar></app-navbar>
-<h1 style="text-align: center;font-family: 'Cinzel', serif;font-weight: 700;font-size: 48px;color:#F6F6F6">Guide Warlock Destruction PVE</h1>
+<h1 class="title">Guide Warlock Destruction PVE</h1>
 <section class="container">
-    <app-introduction-guide></app-introduction-guide>
+    <div style="display: flex;flex-direction: column;gap: 2em;">
+        <app-introduction-guide></app-introduction-guide>
+        <app-introduction-guide></app-introduction-guide>
+    </div>
     <app-armorer></app-armorer>
 </section>
+
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>

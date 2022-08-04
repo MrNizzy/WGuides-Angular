@@ -1,0 +1,19 @@
+.statistics{
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+    user-select: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b62d2e;
+    transition: all 0.3s ease-in-out;
+    span{
+        color: #FFD100;
+    }
+}
