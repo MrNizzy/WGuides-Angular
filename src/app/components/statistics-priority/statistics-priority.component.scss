@@ -1,10 +1,8 @@
 .statistics{
     margin-bottom: 1em;
-    padding: 1em;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
     user-select: none;
-    border-radius: 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;

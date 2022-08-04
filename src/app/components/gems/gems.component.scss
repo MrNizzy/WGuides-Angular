@@ -1,0 +1,10 @@
+.card-content-gems{
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .card-content-gems{
+        flex-wrap: wrap;
+    }
+}
