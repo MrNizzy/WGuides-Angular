@@ -9,6 +9,7 @@ import { IntroductionGuideComponent } from './components/introduction-guide/intr
 import { FooterComponent } from './components/footer/footer.component';
 import { StatisticsPriorityComponent } from './components/statistics-priority/statistics-priority.component';
 import { GemsComponent } from './components/gems/gems.component';
+import { VideoGuideComponent } from './components/video-guide/video-guide.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GemsComponent } from './components/gems/gems.component';
     IntroductionGuideComponent,
     FooterComponent,
     StatisticsPriorityComponent,
-    GemsComponent
+    GemsComponent,
+    VideoGuideComponent
   ],
   imports: [
     BrowserModule,
