@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { StatisticsPriorityComponent } from './components/statistics-priority/statistics-priority.component';
 import { GemsComponent } from './components/gems/gems.component';
 import { VideoGuideComponent } from './components/video-guide/video-guide.component';
+import { EnchantsComponent } from './components/enchants/enchants.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VideoGuideComponent } from './components/video-guide/video-guide.compon
     FooterComponent,
     StatisticsPriorityComponent,
     GemsComponent,
-    VideoGuideComponent
+    VideoGuideComponent,
+    EnchantsComponent
   ],
   imports: [
     BrowserModule,

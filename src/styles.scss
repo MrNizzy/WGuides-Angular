@@ -41,6 +41,12 @@ body{
         filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
     }
 }
+.mb-3{
+    margin-bottom: 1em;
+}
+.mb-4{
+    margin-bottom: .5em;
+}
 .item-icon{
     padding: .6em;
     background: #28150f;
@@ -48,7 +54,7 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
     transition: all 0.3s ease-in-out;
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -88,11 +94,23 @@ body{
     border: #0070dd 2px solid;
     border-radius: 5px;
 }
+.border-cyan{
+    border: #72d5ff 2px solid;
+    border-radius: 5px;
+}
+.border-white{
+    border: #FFF 2px solid;
+    border-radius: 5px;
+}
 .border-green{
     border: #1eff00 2px solid;
     border-radius: 5px;
 }
 .border-yellow{
+    border: #ffff98 2px solid;
+    border-radius: 5px;
+}
+.border-gold{
     border: #FFD100 2px solid;
     border-radius: 5px;
 }
