@@ -94,12 +94,20 @@ img{
 
 .details{
     span{
+        font-size: 14px;
+        font-weight: 400;
         color: #fff;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+    }
+    a{
+        font-size: 14px;
+        font-weight: 400;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
     }
     h1, h2, h3{
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
         color: #FFD100;
         line-height: 3px;
-        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
         text-align: center;
         font-family: 'Cinzel', serif;
     }

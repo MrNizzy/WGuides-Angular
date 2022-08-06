@@ -4,6 +4,18 @@
 body{
     background-color: #28150f;
 }
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
 .link{
     cursor: pointer;
     color: #FFD100;
@@ -37,6 +49,13 @@ body{
         font-family: 'Cinzel', serif;
         font-size: 1.5em;
         font-weight: 700;
+        color: #FFF;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+    }
+    .card-subtitle-2{
+        font-family: 'Cinzel', serif;
+        font-size: 1em;
+        font-weight: 900;
         color: #FFF;
         filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
     }
@@ -118,6 +137,57 @@ body{
 .video-box{
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.table-responsive{
+    overflow-x: auto;
+    padding: .6em;
+    background: url('./assets/images/scenes/pane_dirtLight.jpg');
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+}
+
+table, td, th {
+    border: 2px solid #1e1e1e;
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+th{
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: 900;
+    color: #FFF;
+    background-color: #28150f;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+}
+.td-bg{
+    background-color: #28150f;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+}
+
+.slots{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.slot-header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.slot-icon{
+    width: 40px;
+    height: 40px;
+    background: #28150f;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
 }
 
 /* Firefox */
