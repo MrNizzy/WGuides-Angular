@@ -11,7 +11,7 @@ import { StatisticsPriorityComponent } from './components/statistics-priority/st
 import { GemsComponent } from './components/gems/gems.component';
 import { VideoGuideComponent } from './components/video-guide/video-guide.component';
 import { EnchantsComponent } from './components/enchants/enchants.component';
-import { ConsumiblesComponent } from './components/consumibles/consumibles.component';
+import { ConsumablesComponent } from './components/consumables/consumables.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { ConsumiblesComponent } from './components/consumibles/consumibles.compo
     GemsComponent,
     VideoGuideComponent,
     EnchantsComponent,
-    ConsumiblesComponent
+    ConsumablesComponent
   ],
   imports: [
     BrowserModule,
