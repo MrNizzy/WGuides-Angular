@@ -12,6 +12,7 @@ import { GemsComponent } from './components/gems/gems.component';
 import { VideoGuideComponent } from './components/video-guide/video-guide.component';
 import { EnchantsComponent } from './components/enchants/enchants.component';
 import { ConsumablesComponent } from './components/consumables/consumables.component';
+import { TalentsComponent } from './components/talents/talents.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ConsumablesComponent } from './components/consumables/consumables.compo
     GemsComponent,
     VideoGuideComponent,
     EnchantsComponent,
-    ConsumablesComponent
+    ConsumablesComponent,
+    TalentsComponent
   ],
   imports: [
     BrowserModule,
