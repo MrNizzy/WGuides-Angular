@@ -1,8 +1,16 @@
 # Wguides
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+[![Stars](https://img.shields.io/github/stars/MrNizzy/WGuides-Angular?style=social)](https://github.com/MrNizzy/WGuides-Angular) [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCFjfIk29NqqPGmrCfCV14Yg?style=social)](https://www.youtube.com/channel/UCFjfIk29NqqPGmrCfCV14Yg) [![Maintainer](https://img.shields.io/badge/Maintained%20by-MrNizzy-blue)](https://www.linkedin.com/in/mrnizzy/ "MrNizzy")
+
+![Banner web](https://i.postimg.cc/fb5nvycK/image.png)
+
+## View deploy web
+
+[![Go to web deploy](https://img.shields.io/badge/Go%20to%20web-WGuides%20Netlify-b62d2e?style=for-the-badge)](https://wguides.netlify.app/ "View deploy")
 
 ## Development server
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
