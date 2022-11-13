@@ -56,11 +56,12 @@ $background-color: #0E222F;
 
 .model {
     grid-area: model;
-    background-position: center;
-    background-image: url('../../../assets/images/models/warlock_troll-410.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+    min-width: 200px;
+    min-height: 400px;
+    model-viewer{
+        width: 100%;
+        height: 90%;
+    }
 }
 
 .item {

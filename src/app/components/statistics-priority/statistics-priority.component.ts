@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistics-priority.component.scss']
 })
 export class StatisticsPriorityComponent implements OnInit {
+  textColor = "#28150F";
+  backgroundColor = "#FFD100";
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

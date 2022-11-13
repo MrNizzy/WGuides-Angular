@@ -3,10 +3,6 @@ img{
 }
 
 @media screen and (max-width: 950px){
-    .flex-row{
-        flex-direction: column;
-        gap: 2em;
-    }
     img{
         width: 100%;
     }
