@@ -60,6 +60,18 @@ h5 {
     justify-content: space-evenly;
 }
 
+.grid {
+    display: grid;
+}
+
+.col-3 {
+    gap: .5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.col-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .mw-3 {
     max-width: 30%;
 }
@@ -164,7 +176,7 @@ h5 {
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 
     &:hover {
-        background: mix(black,$color-dark,15);
+        background: mix(black, $color-dark, 15);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
 
@@ -183,13 +195,15 @@ h5 {
     color: $color-dark;
     font-family: 'Noto Sans', serif;
     text-transform: uppercase;
+    text-align: center;
     border-radius: .2rem;
     cursor: pointer;
     font-size: .8rem;
     font-weight: 900;
     padding: 1rem 3rem;
+    max-width: 14rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    transition: all 0.1s ease-in-out;
+    transition: all .3s ease-in-out;
 
     &:hover {
         background: mix($color-primary, $color-dark, 25);
@@ -332,4 +346,16 @@ th {
 
 *::-webkit-scrollbar-thumb:active {
     background-color: $color-secondary;
+}
+
+@media (max-width: 768px) {
+    .col-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
