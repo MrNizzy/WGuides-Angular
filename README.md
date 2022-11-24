@@ -8,6 +8,24 @@
 
 [![Go to web deploy](https://img.shields.io/badge/Go%20to%20web-WGuides%20Netlify-b62d2e?style=for-the-badge)](https://wguides.netlify.app/ "View deploy")
 
+## Local development deployment
+
+### Install dependencies
+
+```bash
+npm install --legacy-peer-deps
+```
+
+> The `--legacy-peer-deps` flag ignores this new dependency, at the risk of introducing breaking changes.
+
+### Launch Angular live development server
+
+```bash
+npm start
+```
+
+> This script execute the `ng serve -o` command.
+
 ## Development server
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
