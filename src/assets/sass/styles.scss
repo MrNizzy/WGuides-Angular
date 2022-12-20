@@ -8,6 +8,17 @@ font-family: 'Noto Sans', sans-serif;
 
 $border-25: .25rem;
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: $color-dark;
+    background: $color-secondary;
+}
+
+::selection {
+    color: $color-dark;
+    background: $color-secondary;
+}
+
 body {
     background-color: $color-dark;
     font-family: 'Noto Sans', sans-serif;
@@ -38,6 +49,12 @@ h5 {
     flex-wrap: wrap;
 }
 
+.d-flex{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -64,13 +81,18 @@ h5 {
     display: grid;
 }
 
+.col-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .col-3 {
     gap: .5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.col-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+.col-4 {
+    gap: .5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .mw-3 {
@@ -100,7 +122,6 @@ h5 {
 .title {
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
-    user-select: none;
     font-weight: 700;
     font-size: 48px;
     color: #F6F6F6;
@@ -223,6 +244,7 @@ h5 {
     font-size: .8rem;
     line-height: 1rem;
     padding: 1rem 3rem;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -377,6 +399,13 @@ th {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
 }
 
+.slot-icon-sm {
+    width: 24px;
+    height: 24px;
+    background: $color-dark;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
 /* Firefox */
 * {
     scrollbar-width: thin;
@@ -415,8 +444,17 @@ th {
     background-color: $color-secondary;
 }
 
+@media (max-width: 992px) {
+    .col-4{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .col-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .col-4{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -424,5 +462,14 @@ th {
 @media (max-width: 576px) {
     .col-3 {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .col-4 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .flex-row{
+        flex-direction: column;
+    }
+    .mw-5{
+        max-width: 100%;
     }
 }
