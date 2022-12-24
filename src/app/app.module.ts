@@ -15,6 +15,11 @@ import { VideoGuideComponent } from './components/video-guide/video-guide.compon
 import { EnchantsComponent } from './components/enchants/enchants.component';
 import { ConsumablesComponent } from './components/consumables/consumables.component';
 import { TalentsComponent } from './components/talents/talents.component';
+import { GuideComponent } from './pages/guide/guide.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { NewsComponent } from './pages/news/news.component';
+import { DonateComponent } from './pages/donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { TalentsComponent } from './components/talents/talents.component';
     VideoGuideComponent,
     EnchantsComponent,
     ConsumablesComponent,
-    TalentsComponent
+    TalentsComponent,
+    GuideComponent,
+    HomeComponent,
+    AboutComponent,
+    NewsComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,
