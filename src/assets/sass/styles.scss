@@ -55,7 +55,7 @@ h4,
 h5 {
     font-family: 'Cinzel', serif;
     font-weight: 700;
-    color: #FFF;
+    color:$color-white;
     text-align: center;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
 }
@@ -164,7 +164,7 @@ h5 {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 700;
     font-size: 48px;
-    color: #F6F6F6;
+    color: $color-white;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
 }
 
@@ -174,7 +174,7 @@ h5 {
     text-decoration: none;
 
     &:hover {
-        color: $color-primary;
+        color: $color-gray;
     }
 }
 
@@ -271,26 +271,25 @@ model-viewer {
 
 .button {
     display: flex;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: $color-secondary;
-    color: $color-dark;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: rgba(#ae0218, 0.5);
+    color: $color-white;
     font-family: 'Noto Sans', serif;
     text-transform: uppercase;
     text-align: center;
+    border: 2px #ae0218 solid;
     border-radius: .2rem;
     cursor: pointer;
     font-size: .8rem;
     font-weight: 900;
     padding: 1rem 3rem;
-    max-width: 14rem;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-decoration: none;
     transition: all .3s ease-in-out;
 
     &:hover {
-        background: mix($color-primary, $color-dark, 25);
-        color: $color-secondary;
+        background-color: rgba(#ae0218, 0.9);
         transform: scale(0.95);
     }
 }
@@ -298,9 +297,9 @@ model-viewer {
 .button-text-after {
     position: relative;
     overflow: hidden;
-    border: 1px solid $color-dark;
+    border: 2px solid #ae0218;
     border-radius: 0.25rem;
-    color: $color-secondary;
+    color: $color-white;
     display: inline-block;
     font-size: .8rem;
     line-height: 1rem;
@@ -309,7 +308,7 @@ model-viewer {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    background: mix($color-primary, $color-dark, 25);
+    background-color: rgba(#ae0218, 0.5);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     user-select: none;
     -webkit-user-select: none;
@@ -323,7 +322,6 @@ model-viewer {
 }
 
 .button-text-after span:last-child {
-    color: #000;
     display: block;
     position: absolute;
     bottom: 0;
@@ -344,7 +342,7 @@ model-viewer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $color-secondary;
+    background-color: rgba(#ae0218, 1);
     transform-origin: bottom center;
     transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
     transform: skewY(9.3deg) scaleY(0);

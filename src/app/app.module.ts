@@ -21,6 +21,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { NewsComponent } from './pages/news/news.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { RecommendedComponent } from './components/recommended/recommended.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LandingComponent } from './components/landing/landing.component';
     AboutComponent,
     NewsComponent,
     DonateComponent,
-    LandingComponent
+    LandingComponent,
+    RecommendedComponent
   ],
   imports: [
     BrowserModule,

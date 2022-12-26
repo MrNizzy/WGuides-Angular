@@ -1,0 +1,35 @@
+.recommended-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.recommended-item{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    .recommended-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .recommended-item{
+        flex-direction: column;
+        .recommended-content{
+            justify-content: center;
+            align-items: center;
+            h3, p{
+                text-align: center;
+            }
+        }
+    }
+}
