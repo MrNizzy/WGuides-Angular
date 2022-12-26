@@ -1,0 +1,101 @@
+@import '../../../assets/sass/colors';
+
+.landing {
+    min-height: 60vh;
+    width: 100%;
+    background: url('../../../assets/images/scenes/durotar-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    .landing-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10%;
+
+        header{
+            justify-content: flex-end;
+            h1 {
+                font-family: 'Cinzel', serif;
+                font-weight: 700;
+                line-height: 1rem;
+                font-size: 3rem;
+                color: #FFF;
+                text-align: right;
+                filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+            }
+        }
+
+        p {
+            text-align: right;
+        }
+
+        .landing-button {
+            background-color: rgba(#ae0218, 0.5);
+            color: $color-white;
+            font-family: 'Noto Sans', serif;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px #ae0218 solid;
+            border-radius: .2rem;
+            cursor: pointer;
+            font-size: .8rem;
+            font-weight: 900;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: rgba(#ae0218, 0.9);
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+.landing-icon{
+    max-width: 2rem;
+}
+
+
+@media (max-width: 992px) {
+    img{
+        max-width: 2rem;
+    }
+
+    .landing{
+        .landing-content{
+            header{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .landing{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: .25rem;
+        height: auto;
+        width: 100%;
+        .landing-content{
+            header{
+                justify-content: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    model-viewer{
+        display: none;
+    }
+    .flex-row{
+        justify-content: center;
+        align-items: center;
+    }
+}

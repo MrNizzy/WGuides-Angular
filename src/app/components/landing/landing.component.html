@@ -1,0 +1,17 @@
+<main class="grid col-2 landing">
+    <div>
+        <model-viewer [attr.id]="0" alt="Class warlock Destruction PVE Nizzy"
+                src="../../../assets/3d-models/warlock.glb" shadow-intensity="1" camera-controls
+                touch-action="pan-x"></model-viewer>
+    </div>
+    <div class="landing-content">
+        <header class="flex-row">
+            <img src="../../../assets/images/Logo.svg" class="landing-icon" alt="WGuides Logo">
+            <h1>WoW Guides!</h1>
+        </header>
+        <p>
+            A complete catalogue of guides and tutorials to embark on a splendid adventure. Our guides are carefully selected to bring out the best of each class of the game. What are you waiting for?
+        </p>
+        <a [routerLink]="['/guide']" class="landing-button">See all guides</a>
+    </div>
+</main>
