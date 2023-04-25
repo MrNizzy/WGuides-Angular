@@ -1,27 +1,14 @@
 <div class="flex-column flex-center mb-3">
     <h2>Statistics</h2>
-    <div class="d-flex wrap flex-center separator-items">
-        <div tooltip="Intellect" placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor">
-            <img src="../../../assets/images/states/intellect.svg" class="thumbnail" alt="Intellect state">
-        </div>
-        <i class="bi bi-chevron-right"></i>
-        <div tooltip="Hit Rating (17%)" placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor">
-            <img src="../../../assets/images/states/hit.svg" class="thumbnail" alt="Hit state">
-        </div>
-        <i class="bi bi-chevron-right"></i>
-        <div tooltip="Haste Rating" placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor">
-            <img src="../../../assets/images/states/haste.svg" class="thumbnail" alt="Haste state">
-        </div>
-        <i class="bi bi-chevron-right"></i>
-        <div tooltip="Critical Rating" placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor">
-            <img src="../../../assets/images/states/critical.svg" class="thumbnail" alt="Critical state">
-        </div>
-        <i class="bi bi-chevron-right"></i>
-        <div tooltip="Mastery Rating" placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor">
-            <img src="../../../assets/images/states/mastery.svg" class="thumbnail" alt="Mastery state">
+    <div class="separator-items d-flex wrap flex-center mb-3">
+        <div class="d-flex" *ngFor="let item of data; let i = index">
+            <img tooltip={{item.name}} placement="top" [textColor]="textColor" [backgroundColor]="backgroundColor" src={{item.image}} class="thumbnail" alt="Hit state">
+            <i class="bi bi-chevron-right" *ngIf="i < data.length - 1"></i>
         </div>
     </div>
-    <a class="button-text-after" href="https://onedrive.live.com/download?cid=103C68782420FE96&resid=103C68782420FE96%2115189&authkey=ANwX5BS4IoKhZwE" download>
+    <a class="button-text-after"
+        href="https://onedrive.live.com/download?cid=103C68782420FE96&resid=103C68782420FE96%2115189&authkey=ANwX5BS4IoKhZwE"
+        download>
         <span class="text">Addon to reforge</span>
         <span>
             Download file <i class="bi bi-cloud-download-fill"></i>

@@ -5,38 +5,14 @@
         groups, however, if you want to use them in Dungeons, keep in mind that they can be somewhat expensive to Farm.
         Below you will see the consumable items to improve the stats of your class:
     </p>
-    <div class="flex-row mb-5">
-        <a href="https://cata.cavernoftime.com/item=62671" class="item-icon link min-w-3" target="_blank">
-            <img src="https://cdn.cavernoftime.com/cata/icons/large/inv_misc_food_160_fish_87.jpg" class="border-white"
-                alt="Severed Sagefish Head">
-            <span>Severed Sagefish Head</span>
+    <div class="flex-row mb-5" *ngFor="let item of data">
+        <a href={{item.link}} class="item-icon link min-w-3" target="_blank">
+            <img src={{item.source_image}} class="border-white"
+                alt={{item.name}}>
+            <span>{{item.name}}</span>
         </a>
         <p>
-            The Severed Sagefish Head is the quintessential food for our class, as it grants us 90 intellect
-            points for one hour as long as we do not die. The effect should be taken whenever we go to a
-            Raid to increase our damage.
-        </p>
-    </div>
-    <div class="flex-row mb-5">
-        <a href="https://cata.cavernoftime.com/item=62290" class="item-icon link min-w-3" target="_blank">
-            <img src="https://cdn.cavernoftime.com/cata/icons/large/inv_misc_food_meat_cooked_02.jpg"
-                class="border-white" alt="Seafood Magnifique Feast">
-            <span>Seafood Magnifique Feast</span>
-        </a>
-        <p>
-            This is another type of food that will help us to obtain 90 points of intellect, however, I
-            recommend the first option more because of the ease of obtaining the fish for its manufacture.
-        </p>
-    </div>
-    <div class="flex-row">
-        <a href="https://cata.cavernoftime.com/item=62649" class="item-icon link min-w-3" target="_blank">
-            <img src="https://cdn.cavernoftime.com/cata/icons/large/inv_misc_fortunecookie.jpg" class="border-white"
-                alt="Fortune Cookie">
-            <span>Fortune Cookie</span>
-        </a>
-        <p>
-            These fortune cookies are another alternative, although I don't recommend their harvesting because
-            we won't always get the benefit we are looking for.
+            {{item.description_use}}
         </p>
     </div>
 </div>

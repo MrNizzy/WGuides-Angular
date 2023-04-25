@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<header class="container" *ngIf="guide">
+    <h1 class="title" *ngFor="let guide of guide">{{ guide.title }}</h1>
+</header>
+<section class="container" *ngIf="guide">
+    <app-introduction-guide [guideId]="guideId" [URL_API]="URL_API"></app-introduction-guide>
+    <app-armorer></app-armorer>
+    <app-gems></app-gems>
+    <app-talents [guideId]="guideId" [URL_API]="URL_API"></app-talents>
+    <app-consumables [guideId]="guideId" [URL_API]="URL_API"></app-consumables>
+    <app-enchants></app-enchants>
+    <!-- <app-video-guide></app-video-guide> -->
+</section>
+<app-footer></app-footer>

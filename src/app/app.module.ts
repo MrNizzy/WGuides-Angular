@@ -22,6 +22,9 @@ import { NewsComponent } from './pages/news/news.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GuideDetailsComponent } from './pages/guide-details/guide-details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +45,15 @@ import { RecommendedComponent } from './components/recommended/recommended.compo
     NewsComponent,
     DonateComponent,
     LandingComponent,
-    RecommendedComponent
+    RecommendedComponent,
+    GuideDetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TooltipModule
+    TooltipModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
